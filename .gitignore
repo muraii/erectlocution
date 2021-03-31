@@ -1,0 +1,7 @@
+content/
+__pycache__/
+garbage/
+pelicanconf.py
+publishconf.py
+tasks.py
+Makefile
