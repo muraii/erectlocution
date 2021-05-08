@@ -19,7 +19,7 @@ body {
     "main"
     "footer";
   /*width: 50%;*/
-  width: clamp(50%, 50% + 1em, 600px);
+  width: clamp(65%, 65% + 1em, 600px);
   margin: auto;
   /*padding-left: 15%;*/
 }
@@ -34,7 +34,7 @@ body {
     "footer";
   /*width: 65%;*/
   /*width: 50%;*/
-  width: clamp(50%, 50% + 1em, 600px);
+  width: clamp(65%, 65% + 1em, 600px);
   margin: auto;
 }
 
@@ -139,6 +139,6 @@ time.post-date {
   grid-area: "footer";
   padding: 2em;
   /*width: 50%;*/
-  width: clamp(50%, 50% + 1em, 600px);
+  width: clamp(65%, 65% + 1em, 600px);
   justify-self: center;
 }
