@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Serif&family=IM+Fell+DW+Pica:ital@0;1&family=Libre+Baskerville&family=Space+Mono&family=Syne+Mono&display=swap');
 
 html {
-    font-size: clamp(1em, 1em + 4vw, 18px);
+    font-size: 16px;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
     "main"
     "footer";
   /*width: 50%;*/
-  width: clamp(65%, 65% + 1em, 600px);
+  width: clamp(50%, 50% + 1em, 600px);
   margin: auto;
   /*padding-left: 15%;*/
 }
@@ -34,7 +34,7 @@ body {
     "footer";
   /*width: 65%;*/
   /*width: 50%;*/
-  width: clamp(65%, 65% + 1em, 600px);
+  width: clamp(50%, 50% + 2em, 600px);
   margin: auto;
 }
 
@@ -139,6 +139,6 @@ time.post-date {
   grid-area: "footer";
   padding: 2em;
   /*width: 50%;*/
-  width: clamp(65%, 65% + 1em, 600px);
+  width: clamp(50%, 50% + 1em, 600px);
   justify-self: center;
 }
