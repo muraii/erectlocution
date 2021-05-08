@@ -5,3 +5,4 @@ pelicanconf.py
 publishconf.py
 tasks.py
 Makefile
+*.swp
