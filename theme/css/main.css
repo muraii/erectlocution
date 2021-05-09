@@ -40,7 +40,7 @@ h1.blog-header,
 h1.blog-header a,
 h1.blog-header a:link,
 h1.blog-header a:visited,
-h1.blog-header a:hover { 
+h1.blog-header a:hover {
   font-family: Anton, sans-serif;
   grid-area: "header";
   /*color: #eee;*/
@@ -53,7 +53,7 @@ h1.blog-header a:hover {
 h1.blog-header a,
 h1.blog-header a:link,
 h1.blog-header a:visited,
-h1.blog-header a:hover { 
+h1.blog-header a:hover {
     text-decoration: none;
 }
 .blog-post {
@@ -94,7 +94,7 @@ a.index-link:visited {
   color: #420315;
   text-decoration: none;
   font-family: Helvetica, Anton, "Syne Mono", monospace;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   text-transform: lowercase;
   padding: 5px 0px;
 }
@@ -119,7 +119,7 @@ time.post-date {
   grid-area: "post-title";
   color: #303;
   font-family: Helvetica, Anton, "Syne Mono", monospace;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-transform: lowercase;
   padding: 0px;
   margin-left: 0px;
@@ -127,8 +127,10 @@ time.post-date {
 
 .blog-post p {
   font-family: "IBM Plex Serif", "Libre Baskerville", Helvetica;
-  line-height: 1.75em;
-  font-size: 1.25em;
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Footer Stuffs */
