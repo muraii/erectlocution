@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Serif&family=IM+Fell+DW+Pica:ital@0;1&family=Libre+Baskerville&family=Space+Mono&family=Syne+Mono&display=swap');
 
+@import 'normalize.css';
+
 html {
   /*font-size: clamp(16px, 1rem + 2vw, 24px);*/
   font-size: 16px;
@@ -20,7 +22,7 @@ body {
     "header"
     "main"
     "footer";
-  width: 50%;
+  width: 80%;
   margin: auto;
   /*padding-left: 15%;*/
 }
@@ -34,25 +36,35 @@ body {
     "main"
     "footer";
   /*width: 65%;*/
-  width: 50%;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  margin-left: auto;
+  width: 80%;
+  margin: auto;
 }
 
+@media screen and (min-width: 35em) {
+  .front-wrapper, .post-wrapper {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .front-wrapper, .post-wrapper {
+    width: 50%;
+  }
+}
 h1.blog-header,
 h1.blog-header a,
 h1.blog-header a:link,
 h1.blog-header a:visited,
 h1.blog-header a:hover {
   font-family: Anton, sans-serif;
-  grid-area: "header";
+  grid-area: header;
   /*color: #eee;*/
   color: #add8ff;
-  font-size: 4rem;
+  /*font-size: 4rem;*/
+  font-size: clamp(4rem, 4rem + .3vw, 5rem);
   /*text-shadow: 2px 2px 0px #303 /*, -2px -2px 0px #fff*/
   text-shadow: 2px 2px 0px #420315 /*, -2px -2px 0px #fff*/;
+  display: inline;
 }
 
 h1.blog-header a,
@@ -78,7 +90,7 @@ h1.blog-header a:hover {
 
 ul {
   list-style-type: none;
-  grid-area: "main";
+  grid-area: main;
   /*justify-self: center;*/
   padding-left: 0;
 }
@@ -89,8 +101,10 @@ li {
 
 blockquote {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+  /*font-size: 1.2rem;*/
+  font-size: clamp(1rem, 1rem + 0.3vw, 1.25rem);
+  /*line-height: 1.6rem;*/
+  line-height: clamp(1.6rem, 1.6rem + 0.3vw, 2rem);
   padding: 1rem;
   background: #eee;
   width: 100%;
@@ -120,15 +134,17 @@ time.post-date {
   margin: 0 2.5em 0 0;
   font-family: Helvetica, "Syne Mono", "Space Mono", monospace;
   color: #ccc;
-  grid-area: "post-date";
+  grid-area: post-date;
 }
 
 /* Post Stuff */
 h2.blog-post-title {
-  grid-area: "post-title";
+  grid-area: post-title;
+  display: inline;
   color: #303;
   font-family: Helvetica, Anton, "Syne Mono", monospace;
-  font-size: 1.6rem;
+  /*font-size: 1.6rem;*/
+  font-size: clamp(1.6rem, 1.6rem + 0.3vw, 2rem);
   text-transform: lowercase;
   padding: 0px;
   margin-left: 0px;
@@ -136,8 +152,10 @@ h2.blog-post-title {
 
 .blog-post p {
   font-family: "IBM Plex Serif", "Libre Baskerville", Helvetica;
-  line-height: 1.75rem;
-  font-size: 1.25rem;
+  /*line-height: 1.75rem;*/
+  line-height: clamp(1.75rem, 1.75rem + 0.3vw, 2.15rem);
+  /*font-size: 1.25rem;*/
+  font-size: clamp(1rem, 1rem + 0.3vw, 22px);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -145,7 +163,7 @@ h2.blog-post-title {
 /* Footer Stuffs */
 .footer {
   background: #333;
-  grid-area: "footer";
+  grid-area: footer;
   padding: 2em;
   width: 50%;
   justify-self: center;
