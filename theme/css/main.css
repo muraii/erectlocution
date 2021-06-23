@@ -44,13 +44,13 @@ body {
   margin: auto;
 }
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 576px) {
   .front-wrapper, .post-wrapper {
     width: 65%;
   }
 }
 
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 768px) {
   .front-wrapper, .post-wrapper {
     width: 50%;
   }
@@ -63,7 +63,7 @@ h1.blog-header a:hover {
   font-family: Anton, sans-serif;
   grid-area: header;
   color: #add8ff;
-  font-size: clamp(4rem, 4rem + .3vw, 5rem);
+  font-size: clamp(3rem, 3rem + .3vw, 5rem);
   text-shadow: 2px 2px 0px #420315 /*, -2px -2px 0px #fff*/;
   display: inline;
 }
@@ -140,7 +140,7 @@ h2.blog-post-title {
   color: #303;
   font-family: Helvetica, Anton, "Syne Mono", monospace;
   /*font-size: 1.6rem;*/
-  font-size: clamp(1.6rem, 1.6rem + 0.3vw, 2rem);
+  font-size: clamp(1.25rem, 1.25rem + 0.3vw, 2rem);
   text-transform: lowercase;
   padding: 0px;
   margin-left: 0px;
