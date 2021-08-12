@@ -20,6 +20,11 @@ body {
   margin: 2em auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .front-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -63,7 +68,8 @@ h1.blog-header a:hover {
   font-family: Anton, sans-serif;
   grid-area: header;
   color: #add8ff;
-  font-size: clamp(3rem, 3rem + .3vw, 5rem);
+  background: white;
+  font-size: clamp(3rem, 3rem + 1.5vw, 5rem);
   text-shadow: 2px 2px 0px #420315 /*, -2px -2px 0px #fff*/;
   display: inline;
 }
@@ -111,24 +117,45 @@ blockquote {
   margin-left: 0px;
 }
 
+a {
+  color: #420315;
+  background: #eee;
+  text-decoration: underline dotted;
+}
+
+a:hover {
+  color: #420315;
+  background: #add8ff;
+}
+
 a.index-link,
 a.index-link:visited {
-  color: #420315;
-  text-decoration: none;
   font-family: Helvetica, Anton, "Syne Mono", monospace;
   text-transform: lowercase;
+  text-decoration: none;
+  background: white;
   padding: 5px 0px;
 }
 
 a.index-link:hover {
-  color: #420315;
+  text-decoration: none;
   padding: 5px 0;
   background: #add8ff;
 }
 
+a.post-end,
+a.post-end:visited,
+a.post-end:hover {
+    text-decoration: none;
+    background: none;
+    margin: 0 auto;
+}
+
+
 time.post-date {
-  margin: 0 2.5em 0 0;
-  font-family: Helvetica, "Syne Mono", "Space Mono", monospace;
+  margin: 0 4.5em 1.5em 0;
+  /*font-family: Helvetica, "Syne Mono", "Space Mono", monospace;*/
+  font-family: "Syne Mono", "Space Mono", monospace;
   color: #ccc;
   grid-area: post-date;
 }
