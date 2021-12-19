@@ -112,7 +112,9 @@ blockquote {
   /*line-height: 1.6rem;*/
   line-height: clamp(1.6rem, 1.6rem + 0.3vw, 2rem);
   padding: 1rem;
-  background: #eee;
+  /*background: #eee;*/
+  border-left: #add8ff 5px solid;
+  color: #777;
   width: 100%;
   margin-left: 0px;
 }
