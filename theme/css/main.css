@@ -4,6 +4,7 @@
 /* Basic reset might help. */
 html {
       box-sizing: border-box;
+      overflow-y: scroll;
   }
   *, *:before, *:after {
         box-sizing: inherit;
@@ -88,20 +89,23 @@ h1.blog-header a:hover {
     "post-title"
     "post-date"
     "post-main";
-  margin-top: auto;
+  /*margin-top: auto;*/
+  margin-top: 0;
   margin-right: auto;
   margin-bottom: 4.5em;
   margin-left: auto;
 }
 
-ul {
+.front-wrapper ul {
   list-style-type: none;
   grid-area: main;
   padding-left: 0;
+  margin-top: 0;
 }
 
 li {
-  padding: 0.5em 0;
+  /*padding: 0.5em 0;*/
+  padding: 0;
   font-size: clamp(1rem, 1rem + 0.3vw, 22px);
 }
 
@@ -119,10 +123,14 @@ blockquote {
   margin-left: 0px;
 }
 
+h2, h3 {
+  font-family: Helvetica, Anton, "Syne Mono", monospace;
+}
 a {
   color: #420315;
-  background: #eee;
-  text-decoration: underline dotted;
+  /*background: #eee;
+  text-decoration: underline dotted;*/
+  text-decoration: none;
 }
 
 a:hover {
@@ -137,6 +145,8 @@ a.index-link:visited {
   text-decoration: none;
   background: white;
   padding: 5px 0px;
+  display: block;
+  border-bottom: 1px solid #aaa;
 }
 
 a.index-link:hover {
@@ -155,10 +165,12 @@ a.post-end:hover {
 
 
 time.post-date {
-  margin: 0 4.5em 1.5em 0;
+  margin: 0.5rem 4.5em 1.5em 0;
+  display: block;
   /*font-family: Helvetica, "Syne Mono", "Space Mono", monospace;*/
-  font-family: "Syne Mono", "Space Mono", monospace;
-  color: #ccc;
+  font-family: Helvetica, Anton, "Syne Mono", "Space Mono", monospace;
+  font-size: 1rem;
+  color: darkgray;
   grid-area: post-date;
 }
 
@@ -167,12 +179,17 @@ h2.blog-post-title {
   grid-area: post-title;
   display: inline;
   color: #303;
-  font-family: Helvetica, Anton, "Syne Mono", monospace;
+  /*font-family: Helvetica, Anton, "Syne Mono", monospace;*/
   /*font-size: 1.6rem;*/
   font-size: clamp(1.25rem, 1.25rem + 0.3vw, 2rem);
   text-transform: lowercase;
   padding: 0px;
   margin-left: 0px;
+}
+
+.post-wrapper h2.blog-post-title {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .blog-post p {
@@ -183,6 +200,13 @@ h2.blog-post-title {
   font-size: clamp(1rem, 1rem + 0.3vw, 22px);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+.blog-post p a {
+  color: black;
+  text-decoration: none;
+  /*border-bottom: 1px solid #add8ff;*/
+  border-bottom: 1px solid black;
 }
 
 /* Footer Stuffs */
