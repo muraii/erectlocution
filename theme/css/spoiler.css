@@ -1,0 +1,84 @@
+/*.quote {
+  margin: 16px 0;
+}
+.quote .quote {
+  margin-top: 0;
+}
+.quote .quote-username {
+  font-weight: bold;
+}
+.quote blockquote {
+  background-color: #fff;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+.quote blockquote p:first-of-type {
+  margin-top: 0;
+}
+.quote blockquote p:last-of-type {
+  margin-bottom: 0;
+} */
+/*.quote.spoiler {*/
+.spoiler {
+  /*height: 3em;*/
+  overflow: hidden;
+}
+.quote.spoiler blockquote {
+  /*color: #fff;*/
+}
+/*.quote.spoiler blockquote::selection {
+  color: #a0a0a0;
+  background-color: #ddd;
+}
+.quote.spoiler a {
+  color: #fff;
+}*/
+/*.quote.spoiler img {*/
+.spoiler img {
+  display: none;
+}
+/*.quote.spoiler .spoiler-toggle {*/
+.spoiler .spoiler-toggle {
+  color: #cc3827;
+  cursor: pointer;
+  font-weight: normal;
+}
+/*.quote.spoiler .spoiler-show {*/
+.spoiler .spoiler-show {
+  display: inline;
+}
+/*.quote.spoiler .spoiler-hide {*/
+.spoiler .spoiler-hide {
+  display: none;
+}
+/*.quote.spoiler-shown {*/
+.spoiler-shown {
+  height: inherit;
+  overflow: inherit;
+}
+/*.quote.spoiler-shown blockquote {*/
+.spoiler-shown blockquote {
+  color: inherit;
+}
+/*.quote.spoiler-shown blockquote::selection {*/
+.spoiler-shown blockquote::selection {
+  color: inherit;
+  background-color: inherit;
+}
+/*.quote.spoiler-shown a {*/
+.spoiler-shown a {
+  color: #cc3827;
+}
+/*.quote.spoiler-shown img {*/
+.spoiler-shown img {
+  display: inherit;
+}
+/*.quote.spoiler-shown .spoiler-show {*/
+.spoiler-shown .spoiler-show {
+  display: none;
+}
+/*.quote.spoiler-shown .spoiler-hide {*/
+.spoiler-shown .spoiler-hide {
+  display: inline;
+}
